@@ -18,9 +18,3 @@ def std_dev(person_list):
     variance = sum((person.age - mean_age) ** 2 for person in person_list) / n
     return variance ** 0.5
 
-# Example usage
-p1 = Person("Kyoungmin", 73)
-p2 = Person("Mercedes", 24)
-p3 = Person("Beatrice", 48)
-person_list = [p1, p2, p3]
-print("Standard Deviation:", std_dev(person_list))  # Approx 20.00555
